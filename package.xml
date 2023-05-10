@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package Date="11/28/2022 11:28:32" Name="DLSPythonExample" Version="3.0.0+38b7f97c" Architecture="AnyCPU" OS="Windows,Linux,MacOS" xmlns="http://opentap.io/schemas/package">
+  <License>Apache-2.0</License>
+  <Description>An example of a Python Plugin for DLS. Note: To connecto to DLS throuhg a browser, please ensure that your REST-API version is above 2.10.2</Description>
+  <Dependencies>
+    <PackageDependency Package="OpenTAP" Version="^9.18.2" />
+    <PackageDependency Package="Python" Version="^3.0.0+38b7f97c" />
+  </Dependencies>
+  <Owner>Keysight Technologies, Inc.</Owner>
+  <SourceUrl>https://github.com/opentap/OpenTap.Python</SourceUrl>
+  <Files>
+    <File Path="Packages/DLSPythonExample/*.py" />
+  </Files>
+</Package>

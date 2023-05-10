@@ -1,0 +1,8 @@
+numpy
+libm2k
+adi
+pyvisa
+ltspice
+moku
+dwf
+matplotlib
