@@ -22,7 +22,7 @@ class NumpyDifference(DLSStep):
         [SelectedData1,SelectedData2] = super().GetStepData1(self.ResultName1,self.ColumnName1,self.ResultName2,self.ColumnName2)
         Data1 = np.fromiter(SelectedData1,dtype=np.float)
         Data2 = np.fromiter(SelectedData2,dtype=np.float)
-        super().OutputToDLS('ScipyTTest',['Data2-Data1'],[Data2-Data1])
+        super().OutputToDLS('NumpyDifference',['Data2-Data1'],[Data2-Data1])
         
 @attribute(OpenTap.Display(Name="Scipy T Test", Description="", Groups= ["DLS Python Plugin", "Scipy Step"]))
 class ScipyTTest(DLSStep):
