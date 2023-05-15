@@ -26,7 +26,7 @@ class OscilloscopeSCPIInstrument(OpenTap.ScpiInstrument):
         return data
         
     def GetTraceData(self,channel):
-        self.ScpiCommand("WAVEFORM:SOURCE " + str(channel))
+        self.ScpiCommand("WAVEFORM:SOURCE CHANNEL" + str(channel))
         self.ScpiCommand("WAVEFORM:POINTS:MODE MAXIMUM")
         self.ScpiCommand(":WAVeform:FORMat BYTE")
         preamble = self.ScpiQuery[String](":WAVEFORM:PREAMBLE?").split(",")
